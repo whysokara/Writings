@@ -1,0 +1,9 @@
+Life = happiness * Math.random() + sadness * Math.random() + hard_work * Math.random() + luck * Math.random() + everything_else * Math.random()
+
+        Nothing has anything to do with anything. Good things will happen to bad people, bad things will happen to good people, bad things will happen to bad people, and good things might also happen to good people."
+
+Ah, life – that's because of the grand cosmic joke where the Almighty Coder apparently decided to go wild with the random number generator. Picture this: God, lounging on a cloud, sipping on some heavenly brew, and lazily punching in "Math.random()" for every single aspect of our existence.
+
+Happiness? happiness * Math.random().
+Sadness? You guessed it, sadness * Math.random().
+Hard work? Sure, but only after hard_work * Math.random().
