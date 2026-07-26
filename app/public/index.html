@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writings</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>Writings</h1>
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="library">Library</button>
+    <button class="tab-btn" data-tab="draft">Draft</button>
+    <button class="tab-btn" data-tab="generate">Generate</button>
+  </nav>
+</header>
+
+<main>
+  <section id="tab-library" class="tab-panel active">
+    <div class="split">
+      <aside class="list-pane">
+        <ul id="published-list" class="piece-list"></ul>
+      </aside>
+      <article id="published-reader" class="reader">
+        <p class="empty-hint">Select a piece to read.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="tab-draft" class="tab-panel">
+    <div class="draft-toolbar">
+      <select id="draft-select">
+        <option value="">— new draft —</option>
+      </select>
+      <input id="draft-name" type="text" placeholder="New draft name" class="hidden">
+      <button id="draft-save">Save</button>
+      <span id="draft-status" class="status"></span>
+    </div>
+    <textarea id="draft-text" placeholder="Write your raw draft here…"></textarea>
+  </section>
+
+  <section id="tab-generate" class="tab-panel">
+    <div class="generate-toolbar">
+      <select id="generate-select"></select>
+      <button id="generate-btn">Generate</button>
+    </div>
+    <div class="generate-body">
+      <div class="log-pane">
+        <pre id="log-output"></pre>
+      </div>
+      <div class="result-pane">
+        <article id="generate-result" class="reader">
+          <p class="empty-hint">Generated piece will appear here.</p>
+        </article>
+        <div id="version-history" class="version-history"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/main.js"></script>
+</body>
+</html>
