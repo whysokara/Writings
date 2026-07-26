@@ -1,4 +1,8 @@
 Why are the washing machine minutes not real minutes
 The "1 minute remaining" screen is just a social experiment to see how long you'll stand there staring at wet clothes
-Time at velocity is variable, depending on the position of the observer.
-It depends on whether you are inside or outside the machine.
+Time at velocity is variable, depending on the position of the observer. It depends on whether you are inside or outside the machine.
+At this point, I don't trust any appliance with a countdown. 
+A washing machine's 5 minutes is longer than the last 5 minutes of a football match. 
+And why do those fake minutes change and take different lengths of time. 5 mins left can take 9 mins on a Saturday and 16 on a Monday!
+washing machine minutes run on their own special timezone.
+The number they show is just a polite suggestion. Then the machine decides it needs an extra rinse, a longer spin, or just wants to sit there thinking about its life choices for another 12 minutes.
