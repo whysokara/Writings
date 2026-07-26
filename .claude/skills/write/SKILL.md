@@ -41,18 +41,18 @@ Execute Generator.txt's process exactly, using:
 
 Run the full pre-delivery audit described in Generator.txt before finalizing anything. Do not deliver a piece that hasn't passed that audit.
 
-## Step 4 — Preserve the previous version, if there is one
+## Step 4 — Determine the next version number
 
-Before writing anything new, check whether `Final/<basename>.md` already exists.
+Look in `Final/` for existing files matching the pattern `<basename>_v<NN>.md` (e.g. `on-patience_v01.md`, `on-patience_v02.md`).
 
-If it does, copy its current content, unchanged, into a new file at `History/<basename>/<basename>_<YYYY-MM-DD_HHMM>.md`, using the current date and time (create the `History/<basename>/` folder first if it doesn't exist yet). This is a plain copy into a plain folder — nothing git-related, nothing to configure. Every past version simply accumulates there as a readable file with a title on it, browsable in Finder/Explorer like any other folder.
+If none exist, this is the first generation: the version is `v01`.
 
-If `Final/<basename>.md` does not exist yet (first generation for this piece), skip this step — there is nothing to preserve.
+If some exist, find the highest version number present and use the next integer, zero-padded to two digits (so `v01`...`v09`, then `v10`, `v11`, and so on — zero-padding keeps them sorting correctly in a plain file browser instead of v10 landing next to v1).
 
 ## Step 5 — Write the output
 
-Write the finished piece (title + body, nothing else — no preamble, no notes, no commentary) to `Final/<basename>.md`, overwriting it if it already exists. This file always reflects the latest generation from the current draft.
+Write the finished piece (title + body, nothing else — no preamble, no notes, no commentary) to `Final/<basename>_v<NN>.md`, using the version number from Step 4. Never overwrite an existing file here — every run produces a new file. Nothing in Final/ is ever deleted or modified by this skill.
 
 ## Step 6 — Confirm
 
-Reply with exactly one line: which draft was read, which final file was written, whether a previous version was archived to History/ (and its filename if so), and the character count of the new output. Nothing else. Do not paste the piece itself back into the conversation — the user will open Final/<basename>.md to read it.
+Reply with exactly one line: which draft was read, the exact filename written (including its version number), and the character count of the new output. Nothing else. Do not paste the piece itself back into the conversation — the user will open the file in Final/ to read it.
